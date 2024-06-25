@@ -3,7 +3,7 @@ import { userContext } from "../App";
 import { MatchCombinations } from "./matchCombinations";
 
 export const Box = () => {
-    const { nextPlayer, setNextPlayer, setWinner, cell } = useContext(userContext)
+    const { nextPlayer, setNextPlayer, setWinner, cell, modalRef } = useContext(userContext)
 
     useEffect(() => {
         winningPlayer()
@@ -20,6 +20,11 @@ export const Box = () => {
             if (cell[a] && cell[a] === cell[b] && cell[a] === cell[c]) {
 
                 setWinner(true)
+                setTimeout(() => {
+
+                    modalRef.current.showModal();
+
+                }, 100)
 
             }
         })

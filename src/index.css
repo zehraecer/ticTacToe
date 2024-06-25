@@ -67,9 +67,9 @@ button:focus-visible {
   }
 } */
 
-.container {
+/* .container {
   position: relative;
-}
+} */
 
 .header {
   display: flex;
@@ -156,12 +156,14 @@ button:focus-visible {
 }
 
 .modal {
-
-  position: absolute;
+  border: none;
+  background-color: #1F3641;
+  width: 100%;
 
   h2 {
+    margin-top: 45px;
     font-family: Outfit;
-    font-size: 14px;
+    font-size: 40px;
     font-weight: 700;
     line-height: 17.64px;
     letter-spacing: 0.875px;
@@ -169,11 +171,63 @@ button:focus-visible {
     color: #A8BFC9;
 
   }
+
+  img {
+    width: 64px;
+    height: 64px;
+  }
+
+  h1 {
+    padding: 16px;
+    width: 150px;
+    font-family: Outfit;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20.16px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #1A2A33;
+    background-color: #F2B137;
+    box-shadow: 0px -4px 0px 0px #CC8B13 inset;
+    border-radius: 10px;
+
+
+  }
+
 }
 
 .modal-middle {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-top: 16px;
+
+
+  h3 {
+    font-family: Outfit;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50.4px;
+    letter-spacing: 2.5px;
+    text-align: left;
+    margin-top: 24px;
+
+
+  }
+
+
 }
+
+.mavi {
+  color: #F2B137;
+
+}
+
+.turuncu {
+  color: #31C3BD;
+}
+
 
 @media (width <=460px) {
 
@@ -191,6 +245,28 @@ button:focus-visible {
       height: 96px;
     }
   }
+
+  .modal {
+
+
+
+    h2 {
+      font-family: Outfit;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 17.64px;
+      letter-spacing: 0.875px;
+      text-align: center;
+      color: #A8BFC9;
+
+    }
+
+    img {
+      width: 21px;
+      height: 21px;
+    }
+  }
+
 
 
 

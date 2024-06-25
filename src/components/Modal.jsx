@@ -2,21 +2,24 @@ import { useContext } from "react"
 import { userContext } from "../App"
 
 export const Modal = () => {
-    const { winner, nextPlayer, modalRef } = useContext(userContext)
+    const { winner, nextPlayer, modalRef, resetGame } = useContext(userContext)
 
     return (
 
         <>
-            <div className="Modal" ref={modalRef}>
+            <dialog className="modal" ref={modalRef}>
 
                 <h2>YOU WON!</h2>
                 <div className="modal-middle">
-                    <h3>TAKES THE ROUND</h3>
                     <img src={nextPlayer === "./x.svg" ? "./o.svg" : "./x.svg"} />
+                    <h3 className={nextPlayer === "./x.svg" ? "mavi" : "turuncu"}>TAKES THE ROUND</h3>
                 </div>
-                <h1>TEBRİKLER KAZANDINIZ</h1>
+                <div style={{ display: "flex", justifyContent: "center", }}>
 
-            </div>
+                    <h1 onClick={resetGame}>NEW ROUND</h1>
+                </div>
+
+            </dialog>
         </>
     )
 }
