@@ -127,3 +127,51 @@ button:focus-visible {
 
   }
 }
+
+.box-container {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px 20px;
+
+  div {
+    width: 140px;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1F3641;
+    box-shadow: 0px -8px 0px 0px #10212A inset;
+    text-align: center;
+    border-radius: 15px;
+
+  }
+}
+
+@media (width <=460px) {
+
+  .container {
+    /* padding: 24px; */
+  }
+
+  .box-container {
+
+    margin-top: 64px;
+
+    div {
+      width: 96px;
+      height: 96px;
+    }
+  }
+
+  .header-right {
+
+
+    img {
+      width: 15px;
+      height: 15px;
+      padding: 12px;
+    }
+  }
+
+}

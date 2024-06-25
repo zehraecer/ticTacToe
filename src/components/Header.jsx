@@ -1,4 +1,8 @@
+import { useContext } from "react"
+import { userContext } from "../App"
+
 export const Header = () => {
+    const { nextPlayer } = useContext(userContext)
 
     return (
         <>
@@ -12,8 +16,8 @@ export const Header = () => {
                 </div>
 
                 <div className="header-middle">
-                    <img src="./grey-x.svg" alt="" />
-                    <h3>TURN</h3>
+                    <img src={nextPlayer} alt="" />
+
                 </div>
 
                 <div className="header-right">
