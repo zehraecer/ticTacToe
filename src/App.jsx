@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from 'react'
+import { createContext, useContext, useRef, useState } from 'react'
 import viteLogo from '/vite.svg'
 import './App.css'
 import { Header } from './components/Header'
@@ -11,9 +11,21 @@ function App() {
   const [nextPlayer, setNextPlayer] = useState("./x.svg")
   const [winner, setWinner] = useState(false)
   const [cell, setCell] = useState(Array(9).fill(null))
+  const modalRef = useRef()
+
+
+  const resetGame = () => {
+
+    setCell(Array(9).fill(null))
+    setWinner(false)
+    setNextPlayer("./x.svg")
+    if (modalRef.current) {
+      modalRef.current.style.display = "none";
+    }
+  }
 
   return (
-    <userContext.Provider value={{ nextPlayer, setNextPlayer, winner, setWinner, cell, setCell }}>
+    <userContext.Provider value={{ nextPlayer, setNextPlayer, winner, setWinner, cell, setCell, modalRef, resetGame }}>
       <div className="container">
 
         <Header />

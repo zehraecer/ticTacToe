@@ -2,14 +2,9 @@ import { useContext } from "react"
 import { userContext } from "../App"
 
 export const Header = () => {
-    const { nextPlayer, setCell, setNextPlayer } = useContext(userContext)
+    const { nextPlayer, setCell, setNextPlayer, modalRef, resetGame } = useContext(userContext)
 
-    const resetGame = () => {
 
-        setCell(Array(9).fill(null))
-        setWinner(false)
-        setNextPlayer("./ x.svg")
-    }
 
     return (
         <>
