@@ -16,13 +16,16 @@ export const Header = () => {
                 </div>
 
                 <div className="header-middle">
+
                     <img src={nextPlayer} alt="" />
                     <h3>TURN</h3>
 
                 </div>
 
                 <div className="header-right" onClick={resetGame}>
+
                     <img src="./restart.svg" alt="" />
+
                 </div>
             </div >
         </>

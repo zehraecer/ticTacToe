@@ -10,13 +10,18 @@ export const Modal = () => {
             <dialog className="modal" ref={modalRef}>
 
                 <h2>YOU WON!</h2>
+
                 <div className="modal-middle">
+
                     <img src={nextPlayer === "./x.svg" ? "./o.svg" : "./x.svg"} />
                     <h3 className={nextPlayer === "./x.svg" ? "mavi" : "turuncu"}>TAKES THE ROUND</h3>
+
                 </div>
+
                 <div style={{ display: "flex", justifyContent: "center", cursor: "pointer" }}>
 
                     <h1 onClick={resetGame}>NEW ROUND</h1>
+
                 </div>
 
             </dialog>

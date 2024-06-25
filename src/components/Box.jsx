@@ -6,6 +6,7 @@ export const Box = () => {
     const { nextPlayer, setNextPlayer, setWinner, cell, modalRef } = useContext(userContext)
 
     useEffect(() => {
+
         winningPlayer()
 
     }, [nextPlayer])

@@ -21,6 +21,7 @@ function App() {
 
   return (
     <userContext.Provider value={{ nextPlayer, setNextPlayer, winner, setWinner, cell, setCell, modalRef, resetGame }}>
+
       <div className="container">
 
         <Header />
