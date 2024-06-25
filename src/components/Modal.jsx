@@ -14,7 +14,7 @@ export const Modal = () => {
                     <img src={nextPlayer === "./x.svg" ? "./o.svg" : "./x.svg"} />
                     <h3 className={nextPlayer === "./x.svg" ? "mavi" : "turuncu"}>TAKES THE ROUND</h3>
                 </div>
-                <div style={{ display: "flex", justifyContent: "center", }}>
+                <div style={{ display: "flex", justifyContent: "center", cursor: "pointer" }}>
 
                     <h1 onClick={resetGame}>NEW ROUND</h1>
                 </div>

@@ -17,9 +17,6 @@ function App() {
     setCell(Array(9).fill(null))
     setWinner(false)
     setNextPlayer("./x.svg")
-    if (modalRef.current) {
-      modalRef.current.style.display = "none";
-    }
   }
 
   return (
