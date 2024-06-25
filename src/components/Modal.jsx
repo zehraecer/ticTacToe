@@ -7,7 +7,12 @@ export const Modal = () => {
     return (
 
         <>
-            <h3>{`Winner : ${winner}`}</h3>
+            <div className="Modal">
+
+                <img src={nextPlayer === "./x.svg" ? "./o.svg" : "./x.svg"} />
+                <h1>TEBRİKLER KAZANDINIZ</h1>
+
+            </div>
         </>
     )
 }

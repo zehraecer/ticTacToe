@@ -2,7 +2,14 @@ import { useContext } from "react"
 import { userContext } from "../App"
 
 export const Header = () => {
-    const { nextPlayer } = useContext(userContext)
+    const { nextPlayer, setCell, setNextPlayer } = useContext(userContext)
+
+    const resetGame = () => {
+
+        setCell(Array(9).fill(null))
+        setWinner(false)
+        setNextPlayer("./ x.svg")
+    }
 
     return (
         <>
@@ -21,10 +28,10 @@ export const Header = () => {
 
                 </div>
 
-                <div className="header-right">
+                <div className="header-right" onClick={resetGame}>
                     <img src="./restart.svg" alt="" />
                 </div>
-            </div>
+            </div >
         </>
     )
 }

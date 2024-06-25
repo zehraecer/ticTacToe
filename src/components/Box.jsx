@@ -1,16 +1,39 @@
-import { useContext, useState } from "react"
+import { useContext, useEffect, useState } from "react"
 import { userContext } from "../App";
+import { MatchCombinations } from "./matchCombinations";
 
 export const Box = () => {
-    const { nextPlayer, setNextPlayer } = useContext(userContext)
+    const { nextPlayer, setNextPlayer, setWinner, cell } = useContext(userContext)
 
-    const [cell, setCell] = useState(Array(9).fill(null))
+
+
+
+    useEffect(() => {
+        winningPlayer()
+
+    }, [nextPlayer])
+
+    const winningPlayer = () => {
+
+        MatchCombinations.map(element => {
+            const a = element[0]
+            const b = element[1]
+            const c = element[2]
+
+            if (cell[a] && cell[a] === cell[b] && cell[a] === cell[c]) {
+                setWinner(true)
+
+            }
+        })
+    }
 
 
     const handleClickGame = (param) => {
+        if (cell[param] === null) {
 
-        cell[param] = nextPlayer
-        setNextPlayer(nextPlayer === "./x.svg" ? "./o.svg" : "./x.svg")
+            cell[param] = nextPlayer
+            setNextPlayer(nextPlayer === "./x.svg" ? "./o.svg" : "./x.svg")
+        }
 
     }
 
