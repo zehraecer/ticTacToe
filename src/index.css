@@ -164,6 +164,14 @@
     align-items: center;
   }
 
+  .header-right {
+
+    img {
+      margin-top: 12px;
+
+
+    }
+  }
 
   .box-container {
     margin-top: 64px;
