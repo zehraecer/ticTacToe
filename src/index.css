@@ -67,13 +67,15 @@ button:focus-visible {
   }
 } */
 
+.container {
+  position: relative;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
 
 }
-
-
 
 .header-left {
   display: flex;
@@ -151,6 +153,26 @@ button:focus-visible {
     border-radius: 15px;
 
   }
+}
+
+.modal {
+
+  position: absolute;
+
+  h2 {
+    font-family: Outfit;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17.64px;
+    letter-spacing: 0.875px;
+    text-align: center;
+    color: #A8BFC9;
+
+  }
+}
+
+.modal-middle {
+  display: flex;
 }
 
 @media (width <=460px) {
