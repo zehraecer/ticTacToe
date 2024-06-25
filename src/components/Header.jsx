@@ -4,8 +4,6 @@ import { userContext } from "../App"
 export const Header = () => {
     const { nextPlayer, setCell, setNextPlayer, modalRef, resetGame } = useContext(userContext)
 
-
-
     return (
         <>
             <div className="header">

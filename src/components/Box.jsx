@@ -5,9 +5,6 @@ import { MatchCombinations } from "./matchCombinations";
 export const Box = () => {
     const { nextPlayer, setNextPlayer, setWinner, cell } = useContext(userContext)
 
-
-
-
     useEffect(() => {
         winningPlayer()
 
@@ -21,12 +18,12 @@ export const Box = () => {
             const c = element[2]
 
             if (cell[a] && cell[a] === cell[b] && cell[a] === cell[c]) {
+
                 setWinner(true)
 
             }
         })
     }
-
 
     const handleClickGame = (param) => {
         if (cell[param] === null) {

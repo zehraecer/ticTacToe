@@ -1,5 +1,4 @@
 import { createContext, useContext, useRef, useState } from 'react'
-import viteLogo from '/vite.svg'
 import './App.css'
 import { Header } from './components/Header'
 import { Box } from './components/Box'
@@ -12,7 +11,6 @@ function App() {
   const [winner, setWinner] = useState(false)
   const [cell, setCell] = useState(Array(9).fill(null))
   const modalRef = useRef()
-
 
   const resetGame = () => {
 
