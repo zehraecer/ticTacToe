@@ -2,7 +2,7 @@ import { useContext } from "react"
 import { userContext } from "../App"
 
 export const Modal = () => {
-    const { winner, nextPlayer, modalRef, resetGame } = useContext(userContext)
+    const { nextPlayer, modalRef, resetGame } = useContext(userContext)
 
     return (
 

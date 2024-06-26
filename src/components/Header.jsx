@@ -2,7 +2,7 @@ import { useContext } from "react"
 import { userContext } from "../App"
 
 export const Header = () => {
-    const { nextPlayer, setCell, setNextPlayer, modalRef, resetGame } = useContext(userContext)
+    const { nextPlayer, resetGame } = useContext(userContext)
 
     return (
         <>
