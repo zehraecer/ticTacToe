@@ -22,7 +22,7 @@ export const Header = () => {
 
                 </div>
 
-                <div className="header-right" onClick={resetGame} onTouchEnd={resetGame}>
+                <div className="header-right" onClick={resetGame} onTouchStart={resetGame}>
 
                     <img src="./restart.svg" alt="" />
 
