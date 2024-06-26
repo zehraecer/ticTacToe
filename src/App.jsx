@@ -12,9 +12,7 @@ function App() {
   const [cell, setCell] = useState(Array(9).fill(null))
   const modalRef = useRef()
 
-  const resetGame = (e) => {
-    e.preventDefault()
-
+  const resetGame = () => {
     setCell(Array(9).fill(null))
     setWinner(false)
     setNextPlayer("./x.svg")
