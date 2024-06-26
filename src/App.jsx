@@ -12,7 +12,8 @@ function App() {
   const [cell, setCell] = useState(Array(9).fill(null))
   const modalRef = useRef()
 
-  const resetGame = () => {
+  const resetGame = (e) => {
+    e.preventDefault()
 
     setCell(Array(9).fill(null))
     setWinner(false)
