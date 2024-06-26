@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react"
+import { useCallback, useContext, useEffect, useState } from "react"
 import { userContext } from "../App";
 import { MatchCombinations } from "./matchCombinations";
 
@@ -11,7 +11,7 @@ export const Box = () => {
 
     }, [nextPlayer])
 
-    const winningPlayer = () => {
+    const winningPlayer = useCallback(() => {
 
         MatchCombinations.map(element => {
             const a = element[0]
@@ -29,7 +29,7 @@ export const Box = () => {
 
             }
         })
-    }
+    }, [nextPlayer])
 
     const handleClickGame = (param) => {
         if (cell[param] === null) {
