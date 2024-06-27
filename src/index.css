@@ -48,6 +48,8 @@
 }
 
 .header-right {
+  border: none;
+  background: none;
 
   img {
     padding: 16px;
