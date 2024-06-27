@@ -35,7 +35,7 @@ export const Box = () => {
         if (cell[param] === null) {
 
             cell[param] = nextPlayer
-            setNextPlayer(nextPlayer === "./x.svg" ? "./o.svg" : "./x.svg")
+            setNextPlayer(nextPlayer === "X" ? "O" : "X")
         }
 
     }
@@ -46,7 +46,9 @@ export const Box = () => {
             <div className="box-container">
                 {cell.map((element, index) => {
                     return (
-                        <div className="box-cell" key={index} onClick={() => handleClickGame(index)}> <img src={element} /> </div>
+
+                        <div className="box-cell" key={index} onClick={() => handleClickGame(index)}>  <span>{element}</span> </div>
+
                     )
                 })}
             </div>

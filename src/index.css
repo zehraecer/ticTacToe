@@ -217,7 +217,9 @@
     gap: 5px;
   }
 
+}
 
-
-
+span {
+  color: #fff;
+  font-size: 20px;
 }

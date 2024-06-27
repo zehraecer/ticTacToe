@@ -7,7 +7,7 @@ import { Modal } from './components/Modal'
 export const userContext = createContext()
 
 function App() {
-  const [nextPlayer, setNextPlayer] = useState("./x.svg")
+  const [nextPlayer, setNextPlayer] = useState("X")
   const [winner, setWinner] = useState(false)
   const [cell, setCell] = useState(Array(9).fill(null))
   const modalRef = useRef()
@@ -15,7 +15,7 @@ function App() {
   const resetGame = () => {
     setCell(Array(9).fill(null))
     setWinner(false)
-    setNextPlayer("./x.svg")
+    setNextPlayer("X")
   }
 
   return (

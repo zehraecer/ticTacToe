@@ -17,7 +17,7 @@ export const Header = () => {
 
                 <div className="header-middle">
 
-                    <img src={nextPlayer} alt="" />
+                    <span>{nextPlayer}</span>
                     <h3>TURN</h3>
 
                 </div>
