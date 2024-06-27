@@ -135,7 +135,7 @@
 .modal-middle {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
   gap: 24px;
   margin-top: 16px;
 
@@ -219,7 +219,17 @@
 
 }
 
-span {
-  color: #fff;
-  font-size: 20px;
+.x {
+  font-family: Rubik;
+  color: #31C3BD;
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.o {
+  color: #F2B137;
+  font-family: Rubik;
+  font-size: 50px;
+  font-weight: 900;
+
 }

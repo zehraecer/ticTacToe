@@ -47,7 +47,7 @@ export const Box = () => {
                 {cell.map((element, index) => {
                     return (
 
-                        <div className="box-cell" key={index} onClick={() => handleClickGame(index)}>  <span>{element}</span> </div>
+                        <div className="box-cell" key={index} onClick={() => handleClickGame(index)}>  <span className={element === "X" ? "x" : "o"} >{element}</span> </div>
 
                     )
                 })}

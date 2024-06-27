@@ -13,8 +13,8 @@ export const Modal = () => {
 
                 <div className="modal-middle">
 
-                    <img src={nextPlayer === "./x.svg" ? "./o.svg" : "./x.svg"} />
-                    <h3 className={nextPlayer === "./x.svg" ? "mavi" : "turuncu"}>TAKES THE ROUND</h3>
+                    <span className={nextPlayer === "X" ? "o" : "x"}>{nextPlayer === "X" ? "O" : "X"} </span>
+                    <h3 className={nextPlayer === "X" ? "mavi" : "turuncu"}>TAKES THE ROUND</h3>
 
                 </div>
 

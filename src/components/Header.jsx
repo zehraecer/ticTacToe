@@ -17,7 +17,7 @@ export const Header = () => {
 
                 <div className="header-middle">
 
-                    <span>{nextPlayer}</span>
+                    <span className={nextPlayer === "X" ? "x" : "o"} >{nextPlayer} </span>
                     <h3>TURN</h3>
 
                 </div>
