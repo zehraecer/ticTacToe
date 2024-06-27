@@ -1,5 +1,6 @@
 import { useContext } from "react"
 import { userContext } from "../App"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 export const Header = () => {
     const { nextPlayer, resetGame } = useContext(userContext)
@@ -24,7 +25,8 @@ export const Header = () => {
 
                 <button className="header-right" onClick={resetGame} onTouchStart={resetGame}>
 
-                    <img src="./restart.svg" alt="" />
+
+                    <i class="fa-solid fa-rotate-right fa-2x"></i>
 
                 </button>
             </div >
