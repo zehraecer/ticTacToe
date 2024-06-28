@@ -48,6 +48,7 @@
 }
 
 .header-right {
+  cursor: pointer;
 
   img {
     padding: 16px;
