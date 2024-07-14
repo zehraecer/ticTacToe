@@ -278,6 +278,12 @@
     gap: 5px;
   }
 
+  .footer {
+    margin-top: 20px;
+    display: flex;
+    gap: 7px;
+  }
+
 }
 
 .x {

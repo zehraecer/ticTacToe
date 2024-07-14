@@ -22,13 +22,11 @@ export const Footer = () => {
                 <div className="xPlayer">
                     <h3>X Player</h3>
                     <h2>{xPlayer}</h2>
-
                 </div>
                 <div className="newGame" onClick={newGame}>
                     <h3>Reset Game</h3>
                 </div>
                 <div className="oPlayer">
-
                     <h3>  O Player</h3>
                     <h2>{oPlayer}</h2>
                 </div>
