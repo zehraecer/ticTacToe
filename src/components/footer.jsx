@@ -4,8 +4,15 @@ import { userContext } from "../App"
 export const Footer = () => {
 
 
-    const { oPlayer, xPlayer } = useContext(userContext)
+    const { oPlayer, xPlayer, setCell, setWinner, setNextPlayer, setXPlayer, setOPlayer } = useContext(userContext)
 
+    const newGame = () => {
+        setCell(Array(9).fill(null))
+        setWinner(false)
+        setNextPlayer("X")
+        setXPlayer(0)
+        setOPlayer(0)
+    }
 
     return (
 
@@ -16,6 +23,9 @@ export const Footer = () => {
                     <h3>X Player</h3>
                     <h2>{xPlayer}</h2>
 
+                </div>
+                <div className="newGame" onClick={newGame}>
+                    <h3>Reset Game</h3>
                 </div>
                 <div className="oPlayer">
 

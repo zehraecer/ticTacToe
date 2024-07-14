@@ -23,14 +23,10 @@ function App() {
 
   return (
     <userContext.Provider value={{ nextPlayer, setNextPlayer, winner, setWinner, cell, setCell, modalRef, resetGame, xPlayer, setXPlayer, oPlayer, setOPlayer }}>
-
       <div className="container">
-
         <Header />
         <Box />
         <Footer />
-
-
       </div>
       {winner === true ? < Modal /> : null}
 

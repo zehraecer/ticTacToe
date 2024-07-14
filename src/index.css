@@ -207,6 +207,24 @@
   background-color: #31C3BD;
 }
 
+.newGame {
+  padding: 16px 20px;
+  background-color: #A8BFC9;
+  border-radius: 15px;
+  cursor: pointer;
+
+  h3 {
+    font-family: Outfit;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 30.24px;
+    letter-spacing: 1.5px;
+    text-align: center;
+
+
+  }
+}
+
 
 @media (width <=460px) {
 
